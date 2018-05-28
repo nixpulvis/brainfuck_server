@@ -1,0 +1,23 @@
+<h2>Show Program</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @program.title %>
+  </li>
+
+  <li>
+    <strong>Source:</strong>
+    <pre><code><%= @program.source %></code></pre>
+  </li>
+
+  <li>
+    <strong>Output:</strong>
+    <pre><%= @output %></pre>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: program_path(@conn, :edit, @program) %></span>
+<span><%= link "Back", to: program_path(@conn, :index) %></span>
